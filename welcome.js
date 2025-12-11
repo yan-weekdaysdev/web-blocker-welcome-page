@@ -24,3 +24,9 @@ const initWelcomePage = () => {
 
 document.addEventListener('DOMContentLoaded', initWelcomePage);
 
+
+
+
+
+
+
