@@ -53,6 +53,32 @@
   <noscript><div><img src="https://mc.yandex.ru/watch/105790017" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   <!-- /Yandex.Metrika counter -->
 
+  <!-- Google tag (gtag.js) - сбор демографических и технических данных БЕЗ событий -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-93NFZ9WFJN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    // Настройка GA4 с включением Google Signals для демографии
+    // send_page_view: false - НЕ отправляем события
+    gtag('config', 'G-93NFZ9WFJN', {
+      // Отключаем автоматическую отправку событий
+      send_page_view: false,
+      
+      // Включаем сбор демографических данных (возраст, пол, интересы)
+      allow_google_signals: true,
+      allow_ad_personalization_signals: true
+    });
+    
+    // Автоматически собираются:
+    // - Демографические данные (возраст, пол, интересы) через Google Signals
+    // - География (страна, регион, город)
+    // - Технические данные (устройство, ОС, браузер, разрешение)
+    // - Источник трафика (источник, кампания, поисковые фразы)
+    // События НЕ отправляются благодаря send_page_view: false
+  </script>
+
   <script src="welcome.js"></script>
 </body>
 </html>
