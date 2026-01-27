@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/icon48.ico" type="image/x-icon">
+  <title>Welcome - Web Blocker</title>
+  <link rel="stylesheet" href="welcome.css">
+</head>
+
+<body>
+  <div class="welcome-container">
+    <div class="welcome-content">
+      <h1 class="welcome-title">Thank you for installing Web Blocker!</h1>
+
+      <p class="instruction-text">
+        To get started, click the Extensions icon (Step 1) in the top right corner of Chrome, then click the pin icon
+        (Step 2) next to 'Web Blocker' to pin it to your toolbar:
+      </p>
+
+      <div class="screenshot-container">
+        <img src="img/Welcome page screen_1.jpg" alt="Pin Web Blocker extension" class="screenshot-image"
+          loading="lazy">
+      </div>
+
+      <p class="instruction-text">
+        Click the 'Web Blocker' icon (Step 3) whenever you want to block distracting websites:
+      </p>
+
+      <div class="screenshot-container">
+        <img src="img/Welcome page screen_2.jpg" alt="Pin Web Blocker extension" class="screenshot-image"
+          loading="lazy">
+      </div>
+    </div>
+  </div>
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date();
+      for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js?id=105790017', 'ym');
+
+    ym(105790017, 'init', { ssr: true, webvisor: true, clickmap: true, ecommerce: "dataLayer", accurateTrackBounce: true, trackLinks: true });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/105790017" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+
+  <!-- Google tag (gtag.js) - сбор демографических и технических данных БЕЗ событий -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-93NFZ9WFJN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    // Настройка GA4 с включением Google Signals для демографии
+    // send_page_view: false - НЕ отправляем события
+    gtag('config', 'G-93NFZ9WFJN', {
+      // Отключаем автоматическую отправку событий
+      send_page_view: false,
+
+      // Включаем сбор демографических данных (возраст, пол, интересы)
+      allow_google_signals: true,
+      allow_ad_personalization_signals: true
+    });
+
+    // Автоматически собираются:
+    // - Демографические данные (возраст, пол, интересы) через Google Signals
+    // - География (страна, регион, город)
+    // - Технические данные (устройство, ОС, браузер, разрешение)
+    // - Источник трафика (источник, кампания, поисковые фразы)
+    // События НЕ отправляются благодаря send_page_view: false
+  </script>
+
+  <script src="welcome.js"></script>
+</body>
+
+</html>
